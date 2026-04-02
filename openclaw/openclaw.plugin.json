@@ -13,6 +13,12 @@
       "placeholder": "m0-...",
       "help": "API key from app.mem0.ai (or use ${MEM0_API_KEY}). Only needed for platform mode."
     },
+    "host": {
+      "label": "API Host",
+      "placeholder": "http://mem0-api:8000",
+      "help": "Custom Mem0 API endpoint for self-hosted platform mode. Defaults to https://api.mem0.ai if not set.",
+      "advanced": true
+    },
     "userId": {
       "label": "Default User ID",
       "placeholder": "default",
@@ -89,6 +95,9 @@
         ]
       },
       "apiKey": {
+        "type": "string"
+      },
+      "host": {
         "type": "string"
       },
       "userId": {
